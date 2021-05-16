@@ -1,0 +1,15 @@
+{
+    "name": "riste/form-components",
+    "description": "Set of form components that make your front end work easy. Compatible with Bootstrap 3.",
+    "type": "library",
+    "require": {
+        "laravel/laravel": "^8.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "RisteDimitrievski",
+            "email": "ristedimitrievski23@gmail.com"
+        }
+    ]
+}
