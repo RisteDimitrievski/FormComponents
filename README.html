@@ -1,0 +1,34 @@
+# FormComponents
+Set of form components that make your front end work easy. Compatible with Bootstrap 3.
+Form Components allow you easy and fast build html forms.
+@version 1.0
+@Author Riste Dimitrievski <ristedimitrievski23@gmail.com>
+
+Required Laravel version: 8.x
+
+If you know the XenForo Framework you will easy understand how this components work. :)
+
+Currently available tags:
+
+<x-inputboxrow>
+<x-texareatboxrow>
+<x-selectboxrow>
+<x-alert>
+
+<x-inputboxrow> accepts everything as standard html tag <input> do. You can specify also label and hint properties (description to the input)
+example:
+<x-inputboxrow name="test" type="text" label="This is some field Label" hint="This is helper for this field" class="some_css-class" id="some_id" required="true"/>
+
+The <x-textareaboxrow> accepts 3 properties (name, label, hint) and HTML attributes also.
+
+The <x-selectboxrow> require you to specify keys in keys property (each key should be comma separated) and options data should be also in comma separated.
+Example how it will work:
+
+<x-selectboxrow name="some_element" keys="array1,array2,array3" options="option1,option2,option3' label="Data" hint="Choose items from select dropdown"/>
+
+The option1 is parent of array1 key.
+
+The <x-selectboxrow> tag accepts also HTML standard attributes like standard tag <select multiple="multiple"  id="someid">
+
+The <x-alert> tag allow you to send some notifications. Required properties are: type and message. 
+@property type is used to specify css class 
